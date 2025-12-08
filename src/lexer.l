@@ -43,7 +43,7 @@ struct token
 "*"                    { return token::T_MUL; }
 "/"                    { return token::T_DIV; }
 
-[-]?[0-9]+("."[0-9]+)? { return token::T_LITERAL_FLOAT; } 
+[0-9]+("."[0-9]+)? { return token::T_LITERAL_FLOAT; } 
 
 \n                     { current_line++; current_column = 1; }
 \r                     { current_column = 1; }

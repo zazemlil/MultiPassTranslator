@@ -82,7 +82,7 @@ class LiteralFloat : public ASTNode {
 public:
     void printValue(std::ostream& os = std::cout) const override { os << value; }
     float getValue() { return value; }
-    LiteralFloat(std::string t, int v) : ASTNode(t), value(v) {}
+    LiteralFloat(std::string t, float v) : ASTNode(t), value(v) {}
     LiteralFloat(std::string t, int tok, float v) : ASTNode(t, tok), value(v) {}
 };
 
