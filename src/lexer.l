@@ -19,9 +19,10 @@ struct token
         T_MINUS = 260,                 // T_MINUS
         T_MUL = 261,                   // T_MUL
         T_DIV = 262,                   // T_DIV
-        T_PARENTHESIS_OPEN = 263,      // T_PARENTHESIS_OPEN
-        T_PARENTHESIS_CLOSE = 264,     // T_PARENTHESIS_CLOSE
-        T_END_OF_FILE = 265            // T_END_OF_FILE
+        UMINUS = 263,                  // UMINUS
+        T_PARENTHESIS_OPEN = 264,      // T_PARENTHESIS_OPEN
+        T_PARENTHESIS_CLOSE = 265,     // T_PARENTHESIS_CLOSE
+        T_END_OF_FILE = 266            // T_END_OF_FILE
     };
     /// Backward compatibility alias (Bison 3.6).
     typedef token_kind_type yytokentype;
